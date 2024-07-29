@@ -34,4 +34,16 @@ jobs:
       - 
         uses: docker://alpine:3.18
         run: echo "hello"
+  my-job-4:
+    needs: my-job-3
+    steps:
+      - 
+        uses: docker://alpine:3.18
+        run: echo "hello"
+  my-job-5:
+    needs: my-job-4
+    steps:
+      - 
+        uses: docker://alpine:3.18
+        run: echo "hello"
   

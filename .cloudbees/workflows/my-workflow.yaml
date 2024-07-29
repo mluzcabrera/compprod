@@ -12,7 +12,7 @@ jobs:
       output1: ${{ steps.step1.outputs.greeting }}
       output2: ${{ steps.step2.outputs.greeting }}
     steps:
-      - name: My first step
+      - name: My first step 
         uses: docker://alpine:3.18
         id: step1
         run: echo "hello there" > "$CLOUDBEES_OUTPUTS/greeting"

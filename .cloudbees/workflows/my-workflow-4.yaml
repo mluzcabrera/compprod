@@ -10,4 +10,10 @@ jobs:
         run: |
           echo "hello world"
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      Name:
+        type: string
+        default: Mariluz
+        required: true
+        description: decription for the field

@@ -15,12 +15,12 @@ on:
       numero1:
         type: number
         default: 666
-        description: asdf
+        description: description 2
       bool1:
         type: boolean
         default: true
         required: true
-        description: bool 1 desc
+        description: description 3
       options1:
         type: choice
         options:
@@ -29,7 +29,7 @@ on:
           - num 3
         default: num 2
         required: true
-        description: opst
+        description: description 4
 jobs:
   build:
     steps:

@@ -14,7 +14,7 @@ on:
         description: description 1
       numero1:
         type: number
-        default: 9.223372036854776e+28
+        default: 9.22337203699999999854776e+28
         required: true
         description: description 2
       bool1:
@@ -27,7 +27,7 @@ on:
         options:
           - num 1
           - num 3
-        default: num 2
+        default: num 3
         required: true
         description: description 4
 jobs:

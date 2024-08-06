@@ -16,6 +16,7 @@ on:
         type: number
         default: 666
         description: description 2
+        required: true
       bool1:
         type: boolean
         default: true

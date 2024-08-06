@@ -14,9 +14,9 @@ on:
         description: description 1
       numero1:
         type: number
-        default: 666
-        description: description 2
+        default: 9.223372036854776e+28
         required: true
+        description: description 2
       bool1:
         type: boolean
         default: true
@@ -26,7 +26,6 @@ on:
         type: choice
         options:
           - num 1
-          - num 2
           - num 3
         default: num 2
         required: true

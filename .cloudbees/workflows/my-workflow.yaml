@@ -7,7 +7,7 @@ jobs:
       - name: My first step
         uses: docker://alpine:3.18
         id: print_params
-        run: echo "$CLOUDBEES_INPUTS/s1"
+        run: echo ${{ inputs.s1 }}
 on:
   workflow_dispatch:
     inputs:

@@ -8,6 +8,7 @@ jobs:
         uses: docker://alpine:3.18
         id: print_params
         run: echo "${{ inputs.s1 }}"
+         echo "${{ inputs.s2 }}"
 on:
   workflow_dispatch:
     inputs:

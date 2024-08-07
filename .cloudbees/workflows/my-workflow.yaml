@@ -16,4 +16,18 @@ jobs:
         id: step2
         run: echo "from the hive" > "$CLOUDBEES_OUTPUTS/greeting"
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      a:
+        type: string
+      b:
+        type: string
+        required: true
+      ac:
+        type: string
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main

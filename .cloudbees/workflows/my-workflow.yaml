@@ -17,10 +17,6 @@ on:
         type: number
       c:
         type: boolean
-      d:
-        type: choice
-        options:
-          - adsf
       e:
         type: string
       f:

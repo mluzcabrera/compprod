@@ -25,8 +25,14 @@ on:
         type: string
       i:
         type: string
-      j:
+      a23:
         type: string
+      a3333:
+        type: number
+      a2:
+        type: choice
+        options:
+          - caca
 jobs:
   my-job-1:
     outputs:

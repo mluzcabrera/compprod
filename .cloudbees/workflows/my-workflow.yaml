@@ -9,7 +9,7 @@ on:
     inputs:
       toobig222:
         type: number
-        default: 2.11111111111111111111111111111111111111111111
+        default: 99999999999999999999911111111111111111111111111111111111111111111
         description: asdfasdf
 jobs:
   my-job-1:

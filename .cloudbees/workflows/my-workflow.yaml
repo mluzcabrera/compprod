@@ -8,25 +8,31 @@ on:
   workflow_dispatch:
     inputs:
       a:
-        type: string
-        default: a
-        required: true
-        description: a
-      b:
-        type: string
-      asd:
-        type: boolean
-      asdf:
         type: choice
         options:
           - asdf
           - asdf
           - asdf
-      aaaa:
-        type: boolean
-      asdf333:
+      b:
         type: number
-        default: 111
+      c:
+        type: boolean
+      d:
+        type: choice
+        options:
+          - adsf
+      e:
+        type: string
+      f:
+        type: string
+      g:
+        type: string
+      h:
+        type: string
+      i:
+        type: string
+      j:
+        type: string
 jobs:
   my-job-1:
     outputs:

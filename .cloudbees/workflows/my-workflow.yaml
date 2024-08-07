@@ -7,9 +7,10 @@ on:
       - main
   workflow_dispatch:
     inputs:
-      toobig:
+      toobig222:
         type: number
-        default: 9999999999999999999999999999999999999999999
+        default: 9.007199254740991e+38
+        description: asdfasdf
 jobs:
   my-job-1:
     outputs:

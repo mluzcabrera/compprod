@@ -17,8 +17,6 @@ on:
         type: number
       c:
         type: boolean
-      e:
-        type: string
       f:
         type: string
       g:

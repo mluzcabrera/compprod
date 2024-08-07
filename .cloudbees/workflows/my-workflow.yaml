@@ -1,36 +1,6 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflowab comit
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-    inputs:
-      a:
-        type: choice
-        options:
-          - asdf
-          - asdf
-          - asdf
-      b:
-        type: number
-      c:
-        type: boolean
-      f:
-        type: string
-      g:
-        type: string
-      h:
-        type: string
-      i:
-        type: string
-      a23:
-        type: string
-      a2:
-        type: choice
-        options:
-          - caca
 jobs:
   my-job-1:
     outputs:
@@ -45,3 +15,5 @@ jobs:
         uses: docker://alpine:3.18
         id: step2
         run: echo "from the hive" > "$CLOUDBEES_OUTPUTS/greeting"
+on:
+  workflow_dispatch:

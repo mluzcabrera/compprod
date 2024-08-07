@@ -6,11 +6,9 @@ jobs:
     steps:
       - name: My first step
         uses: docker://alpine:3.18
-        id: print_params
         run: echo "${{ inputs.s1 }}"
       - name: My s2 step
         uses: docker://alpine:3.18
-        id: print_params
         run: echo "${{ inputs.s2 }}"
 on:
   workflow_dispatch:

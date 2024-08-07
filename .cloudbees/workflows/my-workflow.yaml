@@ -9,7 +9,7 @@ on:
     inputs:
       toobig:
         type: number
-        default: 922337203685477799999999999999999999999999999999999
+        default: 9999999999999999999999999999999999999999999
 jobs:
   my-job-1:
     outputs:

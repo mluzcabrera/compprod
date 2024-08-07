@@ -7,10 +7,26 @@ on:
       - main
   workflow_dispatch:
     inputs:
-      toobig222:
+      a:
+        type: string
+        default: a
+        required: true
+        description: a
+      b:
+        type: string
+      asd:
+        type: boolean
+      asdf:
+        type: choice
+        options:
+          - asdf
+          - asdf
+          - asdf
+      aaaa:
+        type: boolean
+      asdf333:
         type: number
-        default: 99999999999999999999911111111111111111111111111111111111111111111
-        description: asdfasdf
+        default: 111
 jobs:
   my-job-1:
     outputs:

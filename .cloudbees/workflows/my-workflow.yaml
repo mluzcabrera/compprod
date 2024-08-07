@@ -27,8 +27,6 @@ on:
         type: string
       a23:
         type: string
-      a3333:
-        type: number
       a2:
         type: choice
         options:

@@ -1,17 +1,37 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
-name: My workflow
-
-on:
-  push:
-    branches:
-      - '**'
-
+name: mw2
 jobs:
-  build:
+  my-job-1:
     steps:
-      - name: Say hello
-        uses: docker://golang:1.20.3-alpine3.17
-        shell: sh
-        run: |
-          echo "hello world"
+      - name: My first step
+        uses: docker://alpine:3.18
+        run: echo "${{ inputs.s1 }}"
+      - name: My s2 step
+        uses: docker://alpine:3.18
+        run: echo "${{ inputs.s2 }}"
+      - name: My s3 step
+        uses: docker://alpine:3.18
+        run: echo "${{ inputs.s3 }}"
+on:
+  workflow_dispatch:
+    inputs:
+      s1:
+        type: number
+        default: 1234
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non  proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+      s2:
+        type: number
+        required: true
+        description: short desc
+      s3:
+        type: number
+        required: true
+        default: 666
+        description: this is the desc

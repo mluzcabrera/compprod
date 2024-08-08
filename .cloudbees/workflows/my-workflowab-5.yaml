@@ -40,5 +40,4 @@ on:
       s3:
         type: boolean
         default: true
-        required: false
         description: asdfasdf

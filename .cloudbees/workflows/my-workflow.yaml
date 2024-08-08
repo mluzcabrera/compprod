@@ -13,6 +13,15 @@ jobs:
       - name: My s3 step
         uses: docker://alpine:3.18
         run: echo "${{ inputs.s3 }}"
+      - name: ad
+        uses: docker://alpine:3.18
+        run: echo "${{ cloudbees.event.inputs.s1 }}"
+      - name: ap
+        uses: docker://alpine:3.18
+        run: echo "${{ cloudbees.event.inputs.s2 }}"
+      - name: a34
+        uses: docker://alpine:3.18
+        run: echo "${{ cloudbees.event.inputs.s3 }}"
 on:
   workflow_dispatch:
     inputs:

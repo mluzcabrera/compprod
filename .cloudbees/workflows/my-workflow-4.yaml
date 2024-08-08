@@ -14,8 +14,6 @@ on:
     inputs:
       Name:
         type: string
-        default: Mariluz
-        required: true
         description: decription for the field
   push:
     branches:

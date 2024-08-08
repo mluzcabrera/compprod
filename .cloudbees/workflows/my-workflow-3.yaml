@@ -4,29 +4,31 @@ name: My workflow
 on:
   workflow_dispatch:
     inputs:
-      cadena1:
-        type: string
-        default: defaultval1
-        required: true
-        description: description 1
-      numero1:
-        type: number
-        default: 9.22337203699999999854776e+28
-        required: true
-        description: description 2
-      bool1:
-        type: boolean
-        default: true
-        required: true
-        description: description 3
-      options1:
+      s1:
         type: choice
         options:
-          - num 1
-          - num 3
-        default: num 3
+          - opt1
+          - opt2
+          - opt3
+        default: opt3
         required: true
-        description: description 4
+        description: description 1adsfadsfaf
+      s2:
+        type: choice
+        options:
+          - opt1
+          - opt2
+          - opt3
+        required: true
+        description: description 1adsfasdf
+      s3:
+        type: choice
+        options:
+          - opt1
+          - opt2
+          - opt3
+        required: false
+        description: description 14444
 jobs:
   build:
     steps:

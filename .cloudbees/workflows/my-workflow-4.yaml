@@ -8,11 +8,11 @@ jobs:
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello ${{ inputs.Name }}"
+          echo "hello ${{ inputs.nametoprint }}"
 on:
   workflow_dispatch:
     inputs:
-      Name:
+      nametoprint:
         type: string
         description: decription for the field
   push:

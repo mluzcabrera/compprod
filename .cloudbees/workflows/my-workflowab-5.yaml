@@ -12,5 +12,4 @@ on:
     inputs:
       s1:
         type: boolean
-        
-
+        default: true

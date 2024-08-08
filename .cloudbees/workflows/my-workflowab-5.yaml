@@ -38,7 +38,7 @@ on:
       s2:
         type: boolean
         required: true
-        default: true
+        default: false
         description: short desc
       s3:
         type: boolean

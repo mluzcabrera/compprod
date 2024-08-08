@@ -13,6 +13,17 @@ jobs:
       - name: My s3 step
         uses: docker://alpine:3.18
         run: echo ${{ inputs.s3 }}
+  my-job-2:
+    steps:
+      - name: My first step
+        uses: docker://alpine:3.18
+        run: echo ${{ inputs.s1 }}
+      - name: My s2 step
+        uses: docker://alpine:3.18
+        run: echo ${{ inputs.s2 }}
+      - name: My s3 step
+        uses: docker://alpine:3.18
+        run: echo ${{ inputs.s3 }}
 on:
   workflow_dispatch:
     inputs:

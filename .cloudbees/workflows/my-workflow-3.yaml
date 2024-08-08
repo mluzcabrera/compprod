@@ -7,6 +7,7 @@ on:
       s1:
         type: choice
         options:
+          - None
           - opt1
           - opt2
           - opt3

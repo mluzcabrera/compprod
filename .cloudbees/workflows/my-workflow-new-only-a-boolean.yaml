@@ -6,6 +6,7 @@ on:
     inputs:
       a:
         type: boolean
+        required: true
 jobs:
   build:
     steps:

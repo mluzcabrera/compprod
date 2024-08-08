@@ -38,6 +38,7 @@ on:
       s2:
         type: boolean
         required: true
+        default: true
         description: short desc
       s3:
         type: boolean

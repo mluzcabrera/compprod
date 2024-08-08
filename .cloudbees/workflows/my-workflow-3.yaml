@@ -16,9 +16,9 @@ on:
       s2:
         type: choice
         options:
-          - opt1
-          - opt2
-          - opt3
+          - opta
+          - optb
+          - optc
         required: true
         description: description 1adsfasdf
       s3:
@@ -27,6 +27,36 @@ on:
           - opt1
           - opt2
           - opt3
+          - opt4
+          - opt5
+          - opt6
+          - opt7
+          - opt8
+          - opt9
+          - opt10
+          - opt11
+          - opt12
+          - opt13
+          - opt14
+          - opt15
+          - opt16
+          - opt17
+          - opt18
+          - opt19
+          - opt20
+          - opt21
+          - opt22
+          - opt23
+          - opt24
+          - opt25
+          - opt26
+          - opt27
+          - opt28
+          - opt29
+          - opt30
+          - opt31
+          - opt32
+          - opt33
         required: false
         description: description 14444
 jobs:

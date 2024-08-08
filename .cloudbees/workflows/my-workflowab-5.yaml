@@ -37,7 +37,6 @@ on:
           culpa qui officia deserunt mollit anim id est laborum.
       s2:
         type: boolean
-        description: short desc
       s3:
         type: boolean
         default: true

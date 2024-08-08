@@ -13,4 +13,4 @@ on:
   workflow_dispatch:
     inputs:
       a:
-        type: string
+        type: boolean

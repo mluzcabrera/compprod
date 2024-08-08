@@ -30,8 +30,7 @@ on:
         type: number
         required: true
         description: short desc
-      s3:
+      c:
         type: number
         required: true
-        default: 666
         description: this is the desc

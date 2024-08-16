@@ -2,7 +2,11 @@ apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflow 6666
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      param1:
+        type: string
+        default: mlcbdefval
 jobs:
   build:
     steps:

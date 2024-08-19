@@ -1,0 +1,24 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: Example 3
+on:
+ workflow_dispatch:
+   inputs:
+     ceckenv:
+       type: boolean
+       default: true
+       description: Check the environment, then deploy to production.
+jobs:
+ build:
+   steps:
+     - name: Check environment
+       uses: docker://golang:1.20.3-alpine3.17
+       shell: sh
+       run: |
+         if [ "${{inputs.ceckenv}}" = "true" ]; then
+           echo "Deploying to production"
+           # Production deployment steps
+         else
+           echo "Deploying to staging"
+           # Staging deployment steps
+         fi

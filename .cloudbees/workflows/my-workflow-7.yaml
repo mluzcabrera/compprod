@@ -15,3 +15,10 @@ jobs:
           echo "hello world"
     outputs:
       testoutput: mlcb1234
+  echooutput:
+    steps:
+      - uses: docker://golang:1.20
+        name: echo
+        run: echo ${{ needs.build.outputs.testoutput}}
+        shell: /bin/sh
+    needs: build

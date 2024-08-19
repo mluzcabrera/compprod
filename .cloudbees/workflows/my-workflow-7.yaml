@@ -20,5 +20,5 @@ jobs:
       - uses: docker://golang:1.20
         name: echo
         run: echo ${{ needs.build.outputs.testoutput}}
-        shell: /bin/sh
+        shell: sh
     needs: build

@@ -1,6 +1,6 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
-name: Example 1
+name: Example 1asfasdf
 
 on:
   workflow_dispatch:

@@ -11,13 +11,4 @@ jobs:
           echo "hello world"
 on:
   workflow_dispatch:
-    inputs:
-      adsf:
-        type: choice
-        options:
-          - op1
-          - op3
-          - ""
-          - '""'
 
-        description: adsf

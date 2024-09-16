@@ -15,6 +15,7 @@ on:
       adsf:
         type: choice
         options:
+          - op1
           - op3
-          - ""
+
         description: adsf

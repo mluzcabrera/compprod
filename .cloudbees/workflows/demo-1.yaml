@@ -11,4 +11,11 @@ jobs:
           echo "hello world"
 on:
   workflow_dispatch:
+    inputs:
+      achoice:
+        type: choice
+        options:
+          - op1
+          - op2
+          - ''
 

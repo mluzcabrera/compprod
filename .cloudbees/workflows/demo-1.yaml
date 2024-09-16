@@ -17,5 +17,5 @@ on:
         options:
           - op1
           - op2
-          - ''
-
+        default: ""
+        description: only change description

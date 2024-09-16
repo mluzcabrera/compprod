@@ -17,5 +17,7 @@ on:
         options:
           - op1
           - op3
+          - ""
+          - '""'
 
         description: adsf

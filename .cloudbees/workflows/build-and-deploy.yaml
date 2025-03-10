@@ -1,0 +1,83 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: Build and deploy
+on:
+  workflow_dispatch:
+
+jobs:
+  build-deploy-staging:
+    steps:
+      - name: Get source code
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - id: build
+        name: Build and scan
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - id: package
+        name: Package the helm chart
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - id: consulservicename
+        name: Generate consul service name for the application
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - id: deploy
+        name: Deploy the helm chart
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world" 
+  build-preprod:
+    steps:
+      - name: Get source code
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - name: Build and scan
+        id: build
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - name: Package the helm chart
+        id: package
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - name: demo-jenkins
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+        kind: build
+  build-prod:
+    steps:
+      - name: Get source code
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - id: build
+        name: Build and scan
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+      - id: package
+        name: Package the helm chart
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "hello world"
+
